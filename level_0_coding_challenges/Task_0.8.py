@@ -1,9 +1,9 @@
-from lib2to3.pytree import convert
-
-
-def convert_time(number):
+def change_to_time(number):
     hours = number // 60
     minutes = number % 60
+    if minutes < 10:
+        minutes = "0" + str(minutes)
+    
     print(f"the time is {hours} hours and {minutes} minutes")
     
-convert_time(1000)
+change_to_time(60)
