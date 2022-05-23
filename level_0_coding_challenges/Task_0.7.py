@@ -7,6 +7,6 @@ def convert_to_celsius(farenheit_degrees):
     return celsius_degrees
 
 
-print(f"The degrees converted from farenheit to celcius are: {convert_to_celsius(77)})
+print(f"The degrees converted from farenheit to celcius are: {convert_to_celsius(77)}")
 
-print(f"The degrees converted from celcius to farenheit are: {convert_to_farenheit(25)})
+print(f"The degrees converted from celcius to farenheit are: {convert_to_farenheit(25)}")
