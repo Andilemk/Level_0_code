@@ -3,13 +3,11 @@ def vowel_detector(word):
     word = word.lower()
     vowels = ""
     for letter in list_of_vowels:
-        if letter in word:
+        if letter in word and letter not in vowels:
             vowels += letter + ", "
     print(f"Vowels: {vowels}")
-        
-            
-            
-vowel_detector("omnicron")
+    
+vowel_detector(omnicron)
     
     
 
