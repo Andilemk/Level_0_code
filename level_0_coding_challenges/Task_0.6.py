@@ -1,11 +1,16 @@
-def maximum_value(num1, num2, num3, num4):
-    if num1 > num2 and num1 > num3 and num1 > num4:
-        print("Highest number is", num1)
-    elif num2 > num1 and num2 > num3 and num2 > num4:
-         print("Highest number is", num2)
-    elif num3 > num1 and num3 > num2 and num3 >num4:
-         print("Highest number is", num3)
-    elif num4 > num1 and num4 > num2 and num4 > num3:
-        print("Highest number is", num4)
-         
-maximum_value(18,4,25,29)
+def maximum_value(numbers):
+    largest_num = 0
+    for number in numbers:
+        if number > largest_num:
+            largest_num = number
+    print(f"The largest number is in the list is: {largest_num}")
+    
+    count = 0
+            
+    for number in numbers:
+        if number == largest_num:
+            count += 1
+    print(f"The number of largest numbers there are in the list is: {count}")
+             
+maximum_value([12,4,25,29])
+    
