@@ -7,7 +7,7 @@ def vowel_detector(word):
             vowels += letter + ", "
     print(f"Vowels: {vowels}")
     
-vowel_detector(omnicron)
+vowel_detector("Omnicron")
     
     
 
