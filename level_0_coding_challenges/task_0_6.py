@@ -1,9 +1,11 @@
 def maximum_value(num1, num2, num3):
-    largest_num = 0 
+    largest_num = None
     for i in num1,num2,num3:
-        if i > largest_num:
-            largest_num = i
-    return largest_num
+        if largest_num ==  None:
+              largest_num = i
+        elif i > largest_num:
+              largest_num = i
+    print(largest_num)      
     
-print(maximum_value(29,4,25))
+maximum_value(-25, -1,-3)
     
